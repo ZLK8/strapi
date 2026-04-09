@@ -1,1 +1,35 @@
-
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "singularName": "site",
+    "pluralName": "sites",
+    "displayName": "Site"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "domain": {
+      "type": "string",
+      "required": true
+    },
+    "wp_api_url": {
+      "type": "string"
+    },
+    "wp_username": {
+      "type": "string"
+    },
+    "wp_app_password": {
+      "type": "password"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
