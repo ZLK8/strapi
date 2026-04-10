@@ -14,9 +14,7 @@ module.exports = {
 async function pushToWordPress(article) {
   const https = require('https');
 
-  const username = 'abc69945341@gmail.com';
-  const appPassword = 'cJh8 1al9 LhID I6nj 3JKD tRu7';
-  const credentials = Buffer.from(`${username}:${appPassword}`).toString('base64');
+  const accessToken = ')MR1A$WL&zNlPw9PCdO@QLUPI0ExS^#dCuB1Z761&zTOi$fLGa1171uJMqV(%bzJ';
 
   const body = JSON.stringify({
     title: article.title,
@@ -31,7 +29,7 @@ async function pushToWordPress(article) {
       path: '/wp/v2/sites/abc69945341-kqtjc.wordpress.com/posts',
       method: 'POST',
       headers: {
-        'Authorization': `Basic ${credentials}`,
+        'Authorization': `Bearer ${accessToken}`,
         'Content-Type': 'application/json',
         'Content-Length': Buffer.byteLength(body),
       },
