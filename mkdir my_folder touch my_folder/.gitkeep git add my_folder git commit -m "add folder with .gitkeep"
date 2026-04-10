@@ -1,4 +1,0 @@
-mkdir my_folder
-touch my_folder/.gitkeep
-git add my_folder
-git commit -m "add folder with .gitkeep"
