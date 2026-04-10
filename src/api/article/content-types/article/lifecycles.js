@@ -4,11 +4,6 @@ module.exports = {
   async afterCreate(event) {
     await pushToWordPress(event.result);
   },
-  async afterUpdate(event) {
-    if (event.result.publishedAt) {
-      await pushToWordPress(event.result);
-    }
-  },
 };
 
 async function pushToWordPress(article) {
