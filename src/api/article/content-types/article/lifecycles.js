@@ -15,10 +15,10 @@ async function pushToWordPress(article) {
   const fetch = require('node-fetch');
 
   const username = 'abc69945341@gmail.com'; // 你的 WordPress 邮箱
-  const appPassword = 'YOUR_APP_PASSWORD';   // 替换成你的应用密码
+  const appPassword = 'cJh8 1al9 LhID I6nj 3JKD tRu7';   // 替换成你的应用密码
   const siteUrl = 'https://public-api.wordpress.com/wp/v2/sites/abc69945341-kqtjc.wordpress.com/posts';
 
-  const credentials = Buffer.from(`${username}:${cJh8 1al9 LhID I6nj 3JKD tRu7}`).toString('base64');
+  const credentials = Buffer.from(`${username}:${appPassword}`).toString('base64');
 
   await fetch(siteUrl, {
     method: 'POST',
